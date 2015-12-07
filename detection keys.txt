@@ -1,0 +1,3 @@
+32-bit Flash Player on 32-bit Windows: HKEY_LOCAL_MACHINE\SOFTWARE\Macromedia
+32-bit Flash Player on 64-bit Windows: HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Macromedia
+64-bit Flash Player on 64-bit Windows: HKEY_LOCAL_MACHINE\SOFTWARE\Macromedia
