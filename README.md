@@ -6,6 +6,16 @@ Unofficial Adobe Flash Player removal solution by CHEF-KOCH
 This is an Adobe Flash Player uninstall solution especially for Windows 10 which also should remove the native support. 
 
 
+Basic and official uninstaller commands:
+* ActiveX Control: <code>uninstall_flash_player.exe -uninstall activex</code>
+* NPAPI Plugin: <code>uninstall_flash_player.exe -uninstall plugin</code>
+* Silent uninstaller: <code>uninstall_flash_player.exe -uninstall</code>
+
+
+Linux only:
+rpm -e flash-plugin
+yum remove flash-plugin
+apt-get remove flash-plugin
 
 
 Official:
@@ -15,6 +25,11 @@ Test:
 - Test folder
 
 
+
+
+
+Research:
+* https://www.adobe.com/devnet/flashplayer/articles/flash_player_admin_guide.html
 
 
 Todo:
