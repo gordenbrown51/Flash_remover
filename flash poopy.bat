@@ -1,7 +1,8 @@
-::	kill-w8-flash.bat
+::	kill-w10-flash.bat
+::	original by CHEF-KOCH
 @echo off
-echo Batch file to kill Windows 8 integrated Flash
-echo Tested on Windows 8 x64
+echo Batch file to kill Windows 8 - 10 integrated Adobe Flash
+echo Tested on Windows 8 x64 Pro. & Windows 10 x64 LTSB N
 echo.
 echo If you know what you're doing:
 pause
@@ -44,6 +45,6 @@ for /f "tokens=*" %%f in (
 
 echo.
 echo Done!
-echo Flash killed!
+echo Adobe Flash killed!
 echo.
 pause
