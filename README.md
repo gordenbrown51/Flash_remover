@@ -1,7 +1,5 @@
-# Flash_remover
-
 Unofficial Adobe Flash Player removal solution by CHEF-KOCH
-
+----------
 
 This is an Adobe Flash Player uninstall solution especially for Windows 10 which also should remove the native support. 
 
@@ -23,7 +21,6 @@ Official:
 
 Test:
 - Test folder
-
 
 
 
