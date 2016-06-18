@@ -1,5 +1,6 @@
 ::	kill-w10-flash.bat
 ::	original by CHEF-KOCH
+
 @echo off
 echo Batch file to kill Windows 8 - 10 integrated Adobe Flash
 echo Tested on Windows 8 x64 Pro. & Windows 10 x64 LTSB N
@@ -8,6 +9,27 @@ echo If you know what you're doing:
 pause
 
 regsvr32 -u C:\Windows\SysWOW64\Macromed\Flash\Flash.ocx
+takeown /f C:\Windows\SysWOW64\Macromed\*  /r /d Y
+icacls C:\Windows\SysWOW64\Macromed\* /t /c /reset
+icacls C:\Windows\SysWOW64\Macromed\* /t /c /inheritance:r
+icacls C:\Windows\SysWOW64\Macromed\* /t /grant:r %username%:f
+rmdir /s /q C:\Windows\SysWOW64\Macromed
+
+regsvr32 -u C:\Windows\SysWOW64\Macromed\Flash\activex.vch
+takeown /f C:\Windows\SysWOW64\Macromed\*  /r /d Y
+icacls C:\Windows\SysWOW64\Macromed\* /t /c /reset
+icacls C:\Windows\SysWOW64\Macromed\* /t /c /inheritance:r
+icacls C:\Windows\SysWOW64\Macromed\* /t /grant:r %username%:f
+rmdir /s /q C:\Windows\SysWOW64\Macromed
+
+regsvr32 -u C:\Windows\SysWOW64\Macromed\Flash\FlashUtil_ActiveX.dll
+takeown /f C:\Windows\SysWOW64\Macromed\*  /r /d Y
+icacls C:\Windows\SysWOW64\Macromed\* /t /c /reset
+icacls C:\Windows\SysWOW64\Macromed\* /t /c /inheritance:r
+icacls C:\Windows\SysWOW64\Macromed\* /t /grant:r %username%:f
+rmdir /s /q C:\Windows\SysWOW64\Macromed
+
+regsvr32 -u C:\Windows\SysWOW64\Macromed\Flash\FlashUtil_ActiveX.exe
 takeown /f C:\Windows\SysWOW64\Macromed\*  /r /d Y
 icacls C:\Windows\SysWOW64\Macromed\* /t /c /reset
 icacls C:\Windows\SysWOW64\Macromed\* /t /c /inheritance:r
