@@ -19,10 +19,6 @@ apt-get remove flash-plugin
 Official:
 - Contains always the latest flash uninstaller : https://helpx.adobe.com/flash-player/kb/uninstall-flash-player-windows.html This tool will be updated after each new Adobe Flash Player release. The Problem is that it not remove the native WIndows Flash support or all of is registry detection keys.
 
-Test:
-- Test folder
-
-
 
 
 Research:
@@ -30,7 +26,6 @@ Research:
 
 
 Todo:
-- More project info
-- Small script to automatically remove all this Adobe FLash Player stuff
-- .... 
+- Make an all-in-one script with fallback to backup stuff. 
+- Fix reported stuff, oh wait issue tracker is closed, how about to make a pull request?
  
