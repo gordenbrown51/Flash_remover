@@ -8,6 +8,15 @@ echo.
 echo If you know what you're doing:
 pause
 
+:: Control Panel
+
+regsvr32 -u C:\Windows\SysWOW64\FlashPlayerApp.exe
+rmdir /s /q C:\Windows\SysWOW64\FlashPlayerApp.exe
+regsvr32 -u C:\Windows\SysWOW64\FlashPlayerCPLApp.cpl
+rmdir /s /q C:\Windows\SysWOW64\FlashPlayerCPLApp.cpl
+
+:: Folders and garbage
+
 regsvr32 -u C:\Windows\SysWOW64\Macromed\Flash\Flash.ocx
 takeown /f C:\Windows\SysWOW64\Macromed\*  /r /d Y
 icacls C:\Windows\SysWOW64\Macromed\* /t /c /reset
