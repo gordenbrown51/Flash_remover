@@ -1,6 +1,8 @@
 Unofficial Adobe Flash Player removal solution by CHEF-KOCH
 ----------
 
+## Project closed, [Adobe Flash is official dead](https://blogs.adobe.com/conversations/2017/07/adobe-flash-update.html).
+
 This is an Adobe Flash Player uninstall solution especially for Windows 10 which also should remove the native support. 
 
 
