@@ -31,3 +31,4 @@ Official:
 
 Research:
 * https://www.adobe.com/devnet/flashplayer/articles/flash_player_admin_guide.html
+* https://helpx.adobe.com/flash-player/flash-player-releasenotes.html
