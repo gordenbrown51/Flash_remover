@@ -12,6 +12,23 @@
 This is an Adobe Flash Player uninstall solution especially for Windows 10 which also should remove the native support. 
 
 
+Packages under: `C:\Windows\servicing\Packages` in Windows 10
+
+```bash
+Adobe-Flash-For-Windows-Package~31bf3856ad364e35~amd64….(version number of the Flash Player)
+Adobe-Flash-For-Windows-WOW64-Package~31bf3856ad364e35~amd64….(version number of the Flash Player)
+Adobe-Flash-For-Windows-onecoreuap-Package~31bf3856ad364e35~amd64…(version number of the Flash Player)
+```
+
+DISM
+```bash
+dism /online /remove-package /packagename:Adobe-Flash-For-Windows-Package~31bf3856ad364e35~amd64-10.0.17134.1
+dism /online /remove-package /packagename:Adobe-Flash-For-Windows-WOW64-Package~31bf3856ad364e35~amd64-10.0.17134.1
+dism /online /remove-package /packagename:Adobe-Flash-For-Windows-onecoreuap-Package~31bf3856ad364e35~amd64-10.0.17134.1
+```
+
+
+
 Basic and official uninstaller commands:
 * ActiveX Control: <code>uninstall_flash_player.exe -uninstall activex</code>
 * NPAPI Plugin: <code>uninstall_flash_player.exe -uninstall plugin</code>
