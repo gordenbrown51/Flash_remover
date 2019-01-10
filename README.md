@@ -11,8 +11,11 @@
 
 This is an Adobe Flash Player uninstall solution especially for Windows 10 which also should remove the native support. 
 
+### Instructions for Windows 10 (integrated Adobe Flash Player removal)
 
-Packages under: `C:\Windows\servicing\Packages` in Windows 10
+
+Packages under: `C:\Windows\servicing\Packages` in Windows 10 and note down these Adobe-Flash packages names.
+
 
 ```bash
 Adobe-Flash-For-Windows-Package~31bf3856ad364e35~amd64….(version number of the Flash Player)
@@ -20,7 +23,9 @@ Adobe-Flash-For-Windows-WOW64-Package~31bf3856ad364e35~amd64….(version number 
 Adobe-Flash-For-Windows-onecoreuap-Package~31bf3856ad364e35~amd64…(version number of the Flash Player)
 ```
 
-DISM
+Make sure you open the registry and set the correct permissions (see pictures) to gain access. 
+
+Prompt and execute the following via DISM:
 ```bash
 dism /online /remove-package /packagename:Adobe-Flash-For-Windows-Package~31bf3856ad364e35~amd64-10.0.17134.1
 dism /online /remove-package /packagename:Adobe-Flash-For-Windows-WOW64-Package~31bf3856ad364e35~amd64-10.0.17134.1
@@ -29,7 +34,7 @@ dism /online /remove-package /packagename:Adobe-Flash-For-Windows-onecoreuap-Pac
 
 
 
-Basic and official uninstaller commands:
+### Basic and official uninstaller commands
 * ActiveX Control: <code>uninstall_flash_player.exe -uninstall activex</code>
 * NPAPI Plugin: <code>uninstall_flash_player.exe -uninstall plugin</code>
 * Silent uninstaller: <code>uninstall_flash_player.exe -uninstall</code>
@@ -41,7 +46,7 @@ yum remove flash-plugin
 apt-get remove flash-plugin
 
 
-Official:
+### Official Uninstaller
 - Contains always the latest flash uninstaller: https://helpx.adobe.com/flash-player/kb/uninstall-flash-player-windows.html This tool will be updated after each new Adobe Flash Player release. The Problem is that it not remove the native WIndows Flash support or all of is registry detection keys.
 
 
